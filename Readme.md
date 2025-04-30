@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Клим Троценко](https://up.htmlacademy.ru/htmlcss-individual/2/user/2638035).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273)].
+* Сайт: [Мой проект Седона](https://klimxxx.github.io/2638035-sedona-2/).
 
 ---
 
