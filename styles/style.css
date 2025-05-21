@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -15,6 +14,16 @@
   font-display: swap;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 
 body {
   margin: 0;
@@ -25,18 +34,51 @@ body {
   line-height: 26px;
   color: #333333;
 }
-.page-header-link,
-.navigation-link,
-.search-hotel-link,
-.button,
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page-header-link {
+  color: #333333;
+  text-decoration: none;
+}
+
+.navigation-link {
+  color: #333333;
+  text-decoration: none;
+}
+.search-hotel-link {
+  color: #333333;
+  text-decoration: none;
+}
+.button {
+  color: #333333;
+  text-decoration: none;
+}
 .phone-number-link {
   color: #333333;
   text-decoration: none;
 }
 
-.navigation-list,
-.advantages-list,
-.services-list,
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.services-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .footer-social-list {
   margin: 0;
   padding: 0;
@@ -50,15 +92,14 @@ body {
   text-decoration: none;
 }
 
-.navigation-link.button{
+.navigation-link.button {
   font-size: 16px;
-line-height: 20px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: middle;
-text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
 }
-
 
 .advantages-subtitle {
   font-weight: 700;
@@ -109,54 +150,37 @@ text-transform: uppercase;
   text-align: center;
   text-transform: uppercase;
 }
-.search-hotel-text{
-letter-spacing: 0%;
-text-align: center;
+.search-hotel-text {
+  letter-spacing: 0%;
+  text-align: center;
 }
-.search-hotel-link{
-font-weight: 700;
-font-size: 20px;
-line-height: 36px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: middle;
-text-transform: uppercase;
+.search-hotel-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
 }
-.subscribe-title{
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-letter-spacing: 0%;
-text-transform: uppercase;
+.subscribe-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
 }
-.subscribe-description{
-font-size: 22px;
-line-height: 26px;
-letter-spacing: 0%;
-text-align: center;
-}
-
-.phone-number-link{
-font-size: 40px;
-line-height: 40px;
-letter-spacing: 0%;
-text-align: center;
-text-transform: uppercase;
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
-
-
-
-
-
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
+.phone-number-link {
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
 }
