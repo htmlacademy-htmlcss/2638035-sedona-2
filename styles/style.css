@@ -92,39 +92,52 @@ body {
   text-decoration: none;
 }
 
-.navigation-link.button {
+.navigation-link-button {
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: 0%;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.welcome {
+  background-image: url("../images/divider.svg"), url("../images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom, center top;
+  background-size: 100% 57px, cover;
+  padding: 50px 0 83px;
+  min-height: 352px;
+  background-color: #2e393b;
+}
+
+.welcome-image {
+  display: block;
+  margin: 0 auto;
 }
 
 .advantages-subtitle {
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
 }
+
 .advantages-text {
-  letter-spacing: 0%;
   text-align: center;
 }
 .advantages-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
 }
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
-  letter-spacing: 0%;
   text-align: center;
 }
 
@@ -132,55 +145,46 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
 }
 .services-description {
   font-size: 18px;
   line-height: 21px;
-  letter-spacing: 0%;
   text-align: center;
 }
 .search-hotel-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
 }
 .search-hotel-text {
-  letter-spacing: 0%;
   text-align: center;
 }
 .search-hotel-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  letter-spacing: 0%;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
 }
 .subscribe-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  letter-spacing: 0%;
   text-transform: uppercase;
 }
 .subscribe-description {
   font-size: 22px;
   line-height: 26px;
-  letter-spacing: 0%;
   text-align: center;
 }
 
 .phone-number-link {
   font-size: 40px;
   line-height: 40px;
-  letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
 }
