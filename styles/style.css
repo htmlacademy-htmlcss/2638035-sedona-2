@@ -85,7 +85,9 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  max-width: 268px;
 }
 
 
@@ -105,9 +107,6 @@ body {
   position: absolute;
   top: 11px;
   left: 20px;
-
-  font-family: PT Sans;
-  font-weight: 400;
   padding: 5px 5px 5px 4px;
   font-size: 10px;
   line-height: 10px;
@@ -119,7 +118,7 @@ body {
   background-color: #7DB54F;
 }
 .navigation-item-button {
-  margin-left: 20px ;
+  margin: 14px 0 14px 20px;
   padding: 8px 34px;
   background-color: #756157;
   border-radius: 4px;
@@ -238,32 +237,26 @@ body {
 .services-item-house {
   width: 400px;
   background-image: url("../images/house-icon.svg");
-  /* width: 75px;
-  height: 72px; */
+  background-size: 75px 72px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
   text-decoration: none;
 }
 
 .services-item-food {
   width: 400px;
   background-image: url("../images/food-icon.svg");
-  /* background-size: 75px;
-  height: 72px; */
+  background-size: 75px 72px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
   text-decoration: none;
 }
 .services-item-souvenirs {
   background-image: url("../images/souvenirs-icon.svg");
   width: 400px;
-  /* width: 74px;
-  height: 70px; */
+  background-size: 75px 72px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
   text-decoration: none;
 }
 
