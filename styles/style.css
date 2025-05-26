@@ -141,6 +141,12 @@ body {
   background-size: contain;
   text-decoration: none;
 }
+.navigation-item-search:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.navigation-item-favourites:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 .navigation-favourites {
   display: inline-block;
   background-image: url("../images/favourites-icon.svg");
