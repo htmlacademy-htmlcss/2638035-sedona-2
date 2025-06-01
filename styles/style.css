@@ -239,6 +239,7 @@ body {
 .services-text {
   margin: 0;
 }
+
 .services-list {
   margin: 0;
   padding: 0;
@@ -280,8 +281,7 @@ body {
 
 .search-hotel {
   padding: 96px 304px;
-  min-height: 214px;
-  background-color: #fff;
+  background-color: #ffffff;
   text-align: center;
 }
 
@@ -323,9 +323,9 @@ body {
   background-color: grey;
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100% auto;
+  background-size: cover;
   color: #ffffff;
-  min-height: 415px;
+  padding-bottom: 104px;
 }
 
 .subscribe-title {
@@ -336,6 +336,7 @@ body {
   margin: 0;
   padding-top: 96px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .subscribe-description {
@@ -345,36 +346,39 @@ body {
   font-weight: 400;
   width: 592px;
   margin: 0 auto;
+  margin-bottom: 54px;
 }
 .appointment-form {
   display: flex;
   justify-content: flex-end;
-  align-content: center;
-  margin: 54px 258px;
+  margin-right: 258px;
   height: 52px;
 }
 
 .subscribe-email-input {
   display: inline-block;
   font-family: inherit;
+  padding: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  width: 430px;
+  width: 434px;
   padding-left: 16px;
+  border: none;
 }
 .subscribe-button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
   width: 232px;
   background-color: #82b3d3;
-  padding-top: 8px;
+  padding-top: 3px;
+  border: none;
 }
 
 .social-button {
