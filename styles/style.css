@@ -99,9 +99,6 @@ body {
   list-style: none;
 }
 
-.navigation-item-search {
-}
-
 .navigation-item-favourites {
   padding: 0;
   position: relative;
@@ -121,6 +118,7 @@ body {
   color: #fff;
   background-color: #7db54f;
 }
+
 .navigation-item-button {
   margin: 0 0 0 20px;
 }
@@ -192,6 +190,10 @@ body {
   margin: 0 auto;
 }
 
+.advantages {
+  background-color: red;
+}
+
 .advantages-subtitle {
   margin: 0;
   font-weight: 700;
@@ -213,6 +215,7 @@ body {
   padding: 0;
   list-style: none;
 }
+
 .advantages-title {
   margin: 0;
   font-weight: 700;
@@ -221,6 +224,7 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+
 .advantages-description {
   margin: 0;
   font-size: 18px;
@@ -228,55 +232,77 @@ body {
   text-align: center;
 }
 
-.services-title {
-  margin: 0;
+.advantages-item-image {
+  display: block;
+}
+
+.services {
+  padding: 65px 0 0;
+}
+
+.services-caption {
+  width: 505px;
+  margin: 0 auto 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
 }
+
 .services-text {
-  margin: 0;
+  margin: 0 auto 64px;
+  width: 490px;
 }
 
 .services-list {
   margin: 0;
-  padding: 0;
+  padding: 0 0 81px;
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
 }
+
+.services-item {
+  background-color: rgba(131, 179, 211, 0.122);
+  background-repeat: no-repeat;
+  padding: 183px 0 0;
+}
+
+.services-item.services-item:nth-child(2n) {
+  background-color: #ffffff;
+}
+
+.services-item-title {
+  margin: 0 auto 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .services-description {
-  margin: 0;
+  margin: 0 auto;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  width: 230px;
 }
 
 .services-item-house {
-  width: 400px;
   background-image: url("../images/house-icon.svg");
-  background-size: 75px 72px;
-  background-repeat: no-repeat;
-  background-position: center;
-  text-decoration: none;
+  background-position: top 81px center;
 }
 
 .services-item-food {
-  width: 400px;
   background-image: url("../images/food-icon.svg");
-  background-size: 75px 72px;
-  background-repeat: no-repeat;
-  background-position: center;
-  text-decoration: none;
+  background-position: top 83px center;
 }
+
 .services-item-souvenirs {
   background-image: url("../images/souvenirs-icon.svg");
-  width: 400px;
-  background-size: 75px 72px;
-  background-repeat: no-repeat;
-  background-position: center;
-  text-decoration: none;
+  background-position: top 79px center;
 }
 
 .search-hotel {
