@@ -93,12 +93,6 @@ body {
   gap: 10px 0;
 }
 
-.footer-social-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .navigation-item-favourites {
   padding: 0;
   position: relative;
@@ -229,17 +223,16 @@ body {
   background-color: rgb(130, 179, 211);
 }
 
-
 .advantages-container {
   width: 400px;
   padding-top: 113px;
-  padding-bottom: 100px;
+  padding-bottom: 106px;
 }
 
 .advantages-item-special .advantages-container {
   color: #ffffff;
   text-align: center;
-  padding-top: 102px;
+  padding-top: 105px;
 }
 
 .advantages-title {
@@ -286,7 +279,7 @@ body {
 
 .services-list {
   margin: 0;
-  padding: 0 0 81px;
+  padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 400px);
@@ -353,7 +346,7 @@ body {
 .search-hotel-text {
   margin: 0;
   text-align: center;
-  margin-bottom: 54px;
+  margin-bottom: 50px;
 }
 
 .search-hotel-link {
@@ -436,9 +429,31 @@ body {
   border: none;
 }
 
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 49px 70px 30px 79px;
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 142px;
+  justify-content: space-between;
+}
+
+/* .footer-social-item {
+  width: 47px;
+} */
 .social-button {
   color: #333333;
   text-decoration: none;
+  display: block;
+  width: 47px;
+  height: 40px;
 }
 .vkontakte {
   display: inline-block;
