@@ -204,11 +204,13 @@ body {
 }
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
 }
 
 .advantages-item {
@@ -218,21 +220,28 @@ body {
   background-color: rgba(131, 179, 211, 0.122);
 }
 
-.advantages-item-special {
+/* .advantages-item-special {
   display: flex;
   background-color: rgb(130, 179, 211);
 }
+*/
 
 .advantages-container {
   width: 400px;
   padding-top: 113px;
-  padding-bottom: 106px;
+  padding-bottom: 111px;
 }
 
+.advantages-item-special {
+  grid-column: 1/-1;
+  display: flex;
+  background-color: red;
+}
 .advantages-item-special .advantages-container {
   color: #ffffff;
   text-align: center;
-  padding-top: 105px;
+  padding-top: 103px;
+  padding-bottom: 100px;
 }
 
 .advantages-title {
@@ -445,47 +454,34 @@ body {
   justify-content: space-between;
 }
 
-/* .footer-social-item {
-  width: 47px;
-} */
 .social-button {
-  color: #333333;
+  color: red;
   text-decoration: none;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 47px;
   height: 40px;
 }
+
+.social-button:hover {
+  color: blue;
+}
+
+.social-button:focus {
+  color: green;
+}
+
+.social-button:active {
+  color: orange;
+}
 .vkontakte {
-  display: inline-block;
-  background-image: url("../images/vk-icon.svg");
-  width: 24px;
-  height: 14px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  text-decoration: none;
 }
 
 .telegram {
-  display: inline-block;
-  background-image: url("../images/telegram-icon.svg");
-  width: 18px;
-  height: 15.1px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  text-decoration: none;
 }
 
 .youtube {
-  display: inline-block;
-  background-image: url("../images/youtube-icon.svg");
-  width: 22px;
-  height: 17px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  text-decoration: none;
 }
 
 .phone-number-link {
@@ -495,4 +491,20 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.html-academy-logo {
+  color: red;
+}
+
+.html-academy-logo:hover {
+  color: green;
+}
+
+.html-academy-logo:active {
+  color: orange;
+}
+
+.html-academy-logo:visited {
+  color: blueviolet;
 }
