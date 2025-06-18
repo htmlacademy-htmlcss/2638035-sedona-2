@@ -230,7 +230,6 @@ body {
   background-color: rgb(130, 179, 211);
 }
 
-
 .advantages-container {
   width: 400px;
   padding-top: 113px;
@@ -258,6 +257,33 @@ body {
   text-transform: uppercase;
   width: 175px;
   padding-bottom: 62px;
+  position: relative;
+}
+
+.advantages-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.302);
+  margin: 15px auto 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+
+.advantages-item-special .advantages-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.302);
+  margin: 15px auto 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
 }
 
 .advantages-description {
@@ -504,4 +530,65 @@ body {
 
 .html-academy-logo:visited {
   color: blueviolet;
+}
+
+/* Страница Каталог */
+.inner-header {
+  color: #ffffff;
+  background-color: grey;
+  padding-top: 35px;
+  padding-left: 70px;
+  background-image: url("../images/catalog-inner-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  margin: 0;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+}
+
+.breadcrumbs {
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.breadcrumbs-link {
+  font-family: PT Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.catalog-filter-title {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: PT Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
 }
