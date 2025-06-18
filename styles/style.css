@@ -100,8 +100,8 @@ body {
 
 .favourites-quantity {
   position: absolute;
-  top: -1px;
-  right: 0;
+  top: -3px;
+  right: 6px;
   padding: 5px 5px 5px 4px;
   font-size: 10px;
   line-height: 10px;
@@ -125,32 +125,38 @@ body {
 }
 
 .navigation-link-search {
-  display: block;
-  background-image: url("../images/search-icon.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 36px;
-  background-repeat: no-repeat;
-  background-position: center;
   text-decoration: none;
 }
 
-.navigation-item-search:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+.navigation-link-search:hover {
+  color: red;
 }
 
-.navigation-item-favourites:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+.navigation-link-search:active {
+  color: green;
 }
 
 .navigation-link-favourites {
-  display: block;
-  background-image: url("../images/favourites-icon.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 36px;
-  background-repeat: no-repeat;
-  background-position: center;
   text-decoration: none;
   position: relative;
+}
+
+.navigation-link-favourites:hover {
+  color: red;
+}
+
+.navigation-link-favourites:active {
+  color: green;
 }
 
 .navigation-link-button {
@@ -474,14 +480,6 @@ body {
 
 .social-button:active {
   color: orange;
-}
-.vkontakte {
-}
-
-.telegram {
-}
-
-.youtube {
 }
 
 .phone-number-link {
