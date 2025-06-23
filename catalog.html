@@ -81,7 +81,6 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
-                <!-- <img src="#" alt="иконка главной в хл.крошках" /> -->
                 <svg
                   width="13"
                   height="13"
@@ -107,22 +106,22 @@
           </ul>
           <section class="hotel-filter">
             <h2 class="visually-hidden">Меню фильтрации гостиниц</h2>
-            <form
-              class="catalog-filter"
-              action="https://echo.htmlacademy.ru/"
-              method="get"
-            >
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input
-                        class="control-input"
-                        type="checkbox"
-                        name="swimming-pool"
-                        checked
-                      />
+                  <li class="catalog-filter-item checkbox">
+                    <input
+                      class="control-input visually-hidden"
+                      type="checkbox"
+                      name="swimming-pool"
+                      id="swimming-pool"
+                      checked
+                    />
+                    <label
+                      class="control-label checkbox-label"
+                      for="swimming-pool"
+                    >
                       Бассейн
                     </label>
                   </li>
@@ -202,29 +201,90 @@
           </section>
         </header>
         <section class="results">
-          <h2 class="results-title">
-            Найдено гостиниц: <span class="results-count">38</span>
-          </h2>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="popular">Сначала популярные</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-          <h3 class="visually-hidden">Вид сортировки</h3>
-          <ul class="results-view-list">
-            <li class="results-view-item">
-              <span class="visually-hidden">Плиткой</span>
-              <a href="#"><img src="#" alt="сортировка плиткой" /></a>
-            </li>
-            <li class="results-view-item">
-              <span class="visually-hidden">Галерея</span>
-              <a href="#"><img src="#" alt="сортировка галерея" /></a>
-            </li>
-            <li class="results-view-item">
-              <span class="visually-hidden">Списком</span>
-              <a href="#"><img src="#" alt="сортировка списком" /></a>
-            </li>
-          </ul>
+          <div class="results-title-container">
+            <h2 class="results-title">
+              Найдено гостиниц: <span class="results-count">38</span>
+            </h2>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="popular">Сначала популярные</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+            <h3 class="visually-hidden">Вид сортировки</h3>
+            <ul class="results-view-list">
+              <li class="results-view-item current">
+                <span class="visually-hidden">Плиткой</span>
+                <a href="#">
+                  <svg
+                    width="16"
+                    height="14"
+                    viewBox="0 0 16 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M4 0H0V6H4V0Z" fill="currentColor" />
+                    <path d="M16 0H12V6H16V0Z" fill="currentColor" />
+                    <path d="M10 0H6V6H10V0Z" fill="currentColor" />
+                    <path d="M4 8H0V14H4V8Z" fill="currentColor" />
+                    <path d="M16 8H12V14H16V8Z" fill="currentColor" />
+                    <path d="M10 8H6V14H10V8Z" fill="currentColor" /></svg
+                ></a>
+              </li>
+              <li class="results-view-item">
+                <span class="visually-hidden">Галерея</span>
+                <a href="#">
+                  <svg
+                    width="16"
+                    height="14"
+                    viewBox="0 0 16 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_158645_278)">
+                      <path d="M16 12H0V14H16V12Z" fill="currentColor" />
+                      <path
+                        d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_158645_278">
+                        <rect width="16" height="14" fill="currentColor" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <li class="results-view-item">
+                <span class="visually-hidden">Списком</span>
+                <a href="#">
+                  <svg
+                    width="16"
+                    height="14"
+                    viewBox="0 0 16 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_158645_295)">
+                      <path d="M2 0H0V2H2V0Z" fill="currentColor" />
+                      <path d="M16 0H4V2H16V0Z" fill="currentColor" />
+                      <path d="M2 4H0V6H2V4Z" fill="currentColor" />
+                      <path d="M16 4H4V6H16V4Z" fill="currentColor" />
+                      <path d="M2 8H0V10H2V8Z" fill="currentColor" />
+                      <path d="M16 8H4V10H16V8Z" fill="currentColor" />
+                      <path d="M2 12H0V14H2V12Z" fill="currentColor" />
+                      <path d="M16 12H4V14H16V12Z" fill="currentColor" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_158645_295">
+                        <rect width="16" height="14" fill="currentColor" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
           <ol class="product-card-list">
             <li class="product-card">
               <a class="product-card-link" href="product.html">
