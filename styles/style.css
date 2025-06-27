@@ -754,7 +754,9 @@ body {
   flex-wrap: wrap;
   padding-top: 51px;
   padding-left: 75px;
-  justify-content: flex-end;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
 }
 
 .results-title {
@@ -767,8 +769,15 @@ body {
 }
 
 .select-control {
+  padding: 14px auto 20px;
   width: 292px;
   height: 49px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  appearance: none;
+  background: url("../images/tick-selector.svg") no-repeat 261px 20px;
 }
 
 .results-view-list {
@@ -864,10 +873,16 @@ body {
   cursor: pointer;
 }
 
+.results-view-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+}
+
 .results-view-item {
   width: 48px;
   height: 48px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -879,8 +894,15 @@ body {
 
 .product-card-list {
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product-card-title {
   margin: 0;
+}
+
+.product-card-title {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
 }
