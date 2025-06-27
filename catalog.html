@@ -125,77 +125,114 @@
                       Бассейн
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input
-                        class="control-input"
-                        type="checkbox"
-                        name="parking-lot"
-                        checked
-                      />
+                  <li class="catalog-filter-item checkbox">
+                    <input
+                      class="control-input visually-hidden"
+                      type="checkbox"
+                      name="parking-lot"
+                      id="parking-lot"
+                      checked
+                    />
+                    <label
+                      class="control-label checkbox-label"
+                      for="parking-lot"
+                    >
                       Парковка
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input
-                        class="control-input"
-                        type="checkbox"
-                        name="wi-fi"
-                      />
+                  <li class="catalog-filter-item checkbox">
+                    <input
+                      class="control-input visually-hidden"
+                      type="checkbox"
+                      name="wi-fi"
+                      id="wi-fi"
+                    />
+                    <label class="control-label checkbox-label" for="wi-fi">
                       Wi-Fi
                     </label>
                   </li>
                 </ul>
               </fieldset>
 
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group catalog-filter-checkbox">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input
-                        class="control-input"
-                        type="radio"
-                        name="product-group"
-                        value="hotel"
-                        checked
-                      />
+                  <li class="catalog-filter-item checkbox">
+                    <input
+                      class="control-input visually-hidden"
+                      type="radio"
+                      name="product-group"
+                      value="hotel"
+                      id="hotel"
+                      checked
+                    />
+                    <label class="control-label radio-button-label" for="hotel">
                       Гостиница
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input
-                        class="control-input"
-                        type="radio"
-                        name="product-group"
-                        value="motel"
-                      />
-
+                  <li class="catalog-filter-item checkbox">
+                    <input
+                      class="control-input visually-hidden"
+                      type="radio"
+                      name="product-group"
+                      value="motel"
+                      id="motel"
+                    />
+                    <label class="control-label radio-button-label" for="motel">
                       Отель
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input
-                        class="control-input"
-                        type="radio"
-                        name="product-group"
-                        value="apartments"
-                      />
-
+                  <li class="catalog-filter-item checkbox">
+                    <input
+                      class="control-input visually-hidden"
+                      type="radio"
+                      name="product-group"
+                      value="apartments"
+                      id="apartments"
+                    />
+                    <label
+                      class="control-label radio-button-label"
+                      for="apartments"
+                    >
                       Апартаменты
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group cost">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <div class="cost-conteiner">
+                  <div class="min-cost-conteiner">
+                    <input
+                      class="input-cost input-cost-min-value"
+                      type="text"
+                      name="cost-min-value"
+                      value="0"
+                      id="cost-min-value"
+                    />
+                    <label class="cost-label" for="cost-min-value"> От </label>
+                  </div>
+                  <div class="max-cost-conteiner">
+                    <input
+                      class="input-cost input-cost-max-value"
+                      type="text"
+                      name="cost-max-value"
+                      value="9000"
+                      id="cost-max-value"
+                    />
+                    <label class="cost-label" for="cost-min-value"> До </label>
+                  </div>
+                </div>
+                <div class="price-slider-container">
+                  <div class="slider-track"></div>
+                  <div class="slider-range"></div>
+                  <button class="slider-thumb min"></button>
+                  <button class="slider-thumb max"></button>
+                </div>
               </fieldset>
               <div class="inner-buttons-container">
-                <button class="button" type="submit">Применить</button>
-                <button class="button" type="reset">Сбросить</button>
+                <button class="button button-submit" type="submit">Применить</button>
+                <button class="button button-reset" type="reset">Сбросить</button>
               </div>
             </form>
           </section>
