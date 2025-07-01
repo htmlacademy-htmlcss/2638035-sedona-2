@@ -547,7 +547,6 @@ body {
 .inner-header {
   color: #ffffff;
   background-color: grey;
-  padding-top: 35px;
   padding-left: 70px;
   background-image: url("../images/catalog-inner-background.jpg");
   background-size: cover;
@@ -565,7 +564,7 @@ body {
 }
 
 .breadcrumbs {
-  margin: 0 0 40px;
+  margin: 0 0 36px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -612,13 +611,14 @@ body {
   flex-wrap: wrap;
   gap: 41px;
   width: 1060px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .catalog-filter-group {
   margin: 0;
   padding: 34px 0 0;
   border: 0;
+  /* margin-right: 25px; */
 }
 
 .catalog-filter-group.cost {
@@ -709,7 +709,7 @@ body {
 }
 
 .catalog-filter-checkbox {
-  margin-right: 75px;
+  margin-right: 111px;
 }
 
 .cost-conteiner {
@@ -789,6 +789,7 @@ body {
 .select-control {
   box-sizing: border-box;
   padding: 0 33px 0 20px;
+  margin-left: 200px;
   width: 292px;
   height: 49px;
   font-family: inherit;
@@ -796,7 +797,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   appearance: none;
-  background: url("../images/tick-selector.svg") no-repeat 261px 20px;
+  background: url("../images/tick-selector.svg") no-repeat 260px 17px;
 }
 
 .results-view-list {
@@ -866,7 +867,7 @@ body {
 }
 
 .button {
-  width: 191px;
+  width: 140px;
   height: 36px;
   font-weight: 700;
   font-size: 16px;
@@ -907,9 +908,13 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border: 2px solid #000000;
+  border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.results-view-item.current {
+  border: 2px solid rgba(0, 0, 0, 1);
 }
 
 .product-card-list {
