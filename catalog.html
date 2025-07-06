@@ -107,7 +107,7 @@
           <section class="hotel-filter">
             <h2 class="visually-hidden">Меню фильтрации гостиниц</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/">
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group catalog-group-checkbox">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item checkbox">
@@ -154,7 +154,7 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="catalog-filter-group catalog-filter-checkbox">
+              <fieldset class="catalog-filter-group catalog-group-radiobutton">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item checkbox">
@@ -199,7 +199,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group cost">
+              <fieldset class="catalog-filter-group catalog-group-cost">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <div class="cost-conteiner">
                   <div class="min-cost-conteiner">
@@ -258,7 +258,8 @@
                 <a href="#">
                   <span class="visually-hidden">Плиткой</span>
                   <img
-                    src="./images/sorting-icon-1.svg"g
+                    src="./images/sorting-icon-1.svg"
+                    g
                     alt=""
                     width="16"
                     height="14"
@@ -302,10 +303,18 @@
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
               </a>
               <div class="product-card-container">
-                <p class="product-card-type">Гостиница</p>
-                <span class="product-card-price"> От 4000 ₽</span>
-                <a class="product-card-button button" href="#">Подробнее</a>
-                <button type="button" class="product-card-button button">
+                <div class="product-card-type-container">
+                  <span><p class="product-card-type">Гостиница</p></span>
+                  <span class="product-card-price"> От 4000 ₽</span>
+                </div>
+
+                <a class="product-card-button button-read-more button" href="#"
+                  >Подробнее</a
+                >
+                <button
+                  type="button"
+                  class="product-card-button favourites-button button"
+                >
                   В избранное
                 </button>
 
@@ -326,7 +335,7 @@
                 />
               </a>
               <a class="product-card-title-link" href="#">
-                <h3 class="product-card-title">Villas at Poco Diabloa</h3>
+                <h3 class="product-card-title">Villas at Poco Diablo</h3>
               </a>
               <div class="product-card-container">
                 <p class="product-card-type">Гостиница</p>

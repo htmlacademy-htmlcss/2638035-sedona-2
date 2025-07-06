@@ -564,7 +564,7 @@ body {
 }
 
 .breadcrumbs {
-  margin: 0 0 36px;
+  margin: 0 0 41px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -606,23 +606,36 @@ body {
   color: #ffffff;
 }
 
+.hotel-filter {
+  width: 1060px;
+}
+
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
-  gap: 41px;
+  gap: 24px;
   width: 1060px;
-  /* margin: 0 auto; */
+  justify-content: flex-start;
+  box-sizing: border-box;
 }
 
 .catalog-filter-group {
   margin: 0;
   padding: 34px 0 0;
   border: 0;
-  /* margin-right: 25px; */
+}
+
+.catalog-group-checkbox {
+  margin-right: 26px;
+}
+
+.catalog-group-radiobutton {
+  margin-right: 109px;
 }
 
 .catalog-filter-group.cost {
   width: 288px;
+  margin-left: 85px;
 }
 
 .catalog-filter-title {
@@ -708,12 +721,13 @@ body {
   display: none;
 }
 
-.catalog-filter-checkbox {
+/* .catalog-filter-checkbox {
   margin-right: 111px;
-}
+} */
 
 .cost-conteiner {
   display: flex;
+  gap: 2px;
 }
 
 .min-cost-conteiner {
@@ -758,7 +772,8 @@ body {
   position: absolute;
   color: rgba(0, 0, 0, 1);
   top: 12px;
-  left: 116px;
+  left: 107px;
+  opacity: 30%;
 }
 
 .max-cost-conteiner {
@@ -768,7 +783,7 @@ body {
 .results-title-container {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 51px;
+  padding-top: 89px;
   /* padding-left: 75px; */
   justify-content: space-between;
   margin-bottom: 40px;
@@ -812,6 +827,7 @@ body {
 .inner-header {
   width: 1200px;
   box-sizing: border-box;
+  padding-top: 35px;
 }
 
 .price-slider-container {
@@ -867,7 +883,7 @@ body {
 }
 
 .button {
-  width: 140px;
+  width: 190px;
   height: 36px;
   font-weight: 700;
   font-size: 16px;
@@ -928,16 +944,60 @@ body {
 }
 
 .product-card {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 20px;
   background-color: grey;
   border-radius: 4px;
 }
 
+.product-card-image {
+  margin-bottom: 10px;
+}
+
+.product-card-title-link {
+  text-decoration: none;
+}
+
 .product-card-title {
   margin: 0;
+  padding: 0;
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.product-card-type-container {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  min-width: 0;
+}
+
+.product-card-type {
+  margin: 0;
+}
+
+.button-read-more {
+  display: inline-block;
+  padding: 8px 26px;
+}
+
+.product-card-button {
+  text-decoration: none;
+  background-color: rgba(117, 97, 87, 1);
+  border-radius: 4px;
+}
+
+.favourites-button {
+  background-color: rgba(130, 179, 211, 1);
+  box-shadow: none;
+  border: none;
+  /* padding: 8px 20px; */
 }
 
 .product-card-rating-list {
@@ -948,9 +1008,9 @@ body {
 }
 
 .product-card-container {
-  background-color: red;
   display: grid;
   grid-template-columns: repeat(2, 140px);
+  gap: 20px;
 }
 
 .stars {
@@ -980,4 +1040,196 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-block {
+  background-color: rgba(255, 255, 255, 1);
+  width: 717px;
+  height: 576px;
+  border-radius: 30px;
+}
+
+.modal-opened {
+  display: flex;
+}
+
+.modal-header-container {
+  display: flex;
+  width: 595px;
+  justify-content: space-between;
+  padding-top: 64px;
+  padding-left: 70px;
+}
+
+.modal-block-title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+
+.button-close {
+  width: 52px;
+  height: 52px;
+  background: url("../images/close-button-icon.svg") no-repeat center center;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 50%;
+  border: none;
+}
+
+.search-form {
+  width: 577px;
+  margin: 0 auto;
+}
+
+.modal-block-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  width: 137px;
+}
+
+.arrival-input {
+  width: 400px;
+  height: 48px;
+  color: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: rgba(242, 242, 242, 1);
+  background: url("../images/modal-calendar-icon.svg") no-repeat 400px 16px;
+  border: none;
+  padding-left: 20px;
+}
+
+.departure-input {
+  width: 400px;
+  height: 48px;
+  color: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: rgba(242, 242, 242, 1);
+  background: url("../images/modal-calendar-icon.svg") no-repeat 400px 16px;
+  border: none;
+  padding-left: 20px;
+
+}
+
+.error-message {
+  color: rgba(255, 87, 87, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.info-message {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  padding-left: 20px;
+
+}
+
+/* .subscribe-email-input {
+
+  background: url("../images/modal-calendar-icon.svg") no-repeat 100px 10px;
+} */
+
+.button-information {
+  width: 26px;
+  height: 26px;
+  background: url("../images/i-modal-window-icon.svg") no-repeat center center;
+  background-color: rgba(131, 179, 211, 1);
+  border-radius: 50%;
+  border: none;
+}
+
+.number-input-container {
+  display: flex;
+}
+
+.decrement {
+  width: 40px;
+  height: 48px;
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.number-input {
+  /* font-family: inherit; */
+  width: 31px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(242, 242, 242, 1);
+  box-sizing: border-box;
+  border: none;
+}
+
+.increment {
+  width: 40px;
+  height: 48px;
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button-modal-search {
+  width: 577px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(131, 179, 211, 1);
+  color: rgba(255, 255, 255, 1);
+  /* font-family: PT Sans; */
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tooltip-text {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: rgba(51, 51, 51, 1);
+  width: 256px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 15px 18px 18px 22px;
 }
