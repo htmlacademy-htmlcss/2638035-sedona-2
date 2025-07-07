@@ -382,51 +382,52 @@
           <p class="info-message">
             На эти даты есть свободные номера. Пока есть.
           </p>
+          <div class="people-count-container">
+            <label class="modal-block-label adults-label" for="adults">
+              Взрослые:</label
+            >
+            <div class="number-input-container">
+              <button class="decrement">−</button>
+              <input
+                class="number-input"
+                id="adults"
+                type="number"
+                value="2"
+                min="0"
+                max="100"
+                readonly
+              />
+              <button class="increment">+</button>
+            </div>
 
-
-        <label class="modal-block-label adults-label" for="adults">
-          Взрослые:</label
-        >
-        <div class="number-input-container">
-          <button class="decrement">−</button>
-          <input
-            class="number-input"
-            id="adults"
-            type="number"
-            value="2"
-            min="0"
-            max="100"
-            readonly
-          />
-          <button class="increment">+</button>
-        </div>
-
-        <label class="modal-block-label kids-label" for="kids">Дети:
-        <button class="button-information" type="button"></button>
-        <div class="tooltip">
-          <div class="tooltip-text">
-            Укажите количество детей, которые будут с вами, возраст которых от 6
-            до 18 лет. Дети до 6 лет размещаются бесплатно.
+            <label class="modal-block-label kids-label" for="kids"
+              >Дети:
+              <div class="tooltip-container">
+                <button class="button-information" type="button"></button>
+                <div class="tooltip">
+                  <div class="tooltip-text">
+                    Укажите количество детей, которые будут с вами, возраст
+                    которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </div>
+                </div>
+              </div>
+            </label>
+            <div class="number-input-container">
+              <button class="decrement">−</button>
+              <input
+                class="number-input"
+                id="kids"
+                type="number"
+                value="2"
+                min="0"
+                max="100"
+                readonly
+              />
+              <button class="increment">+</button>
+            </div>
           </div>
-        </div>
-        </label>
-        <div class="number-input-container">
-          <button class="decrement">−</button>
-          <input
-            class="number-input"
-            id="kids"
-            type="number"
-            value="2"
-            min="0"
-            max="100"
-            readonly
-          />
-          <button class="increment">+</button>
-        </div>
-
-        <button class="button-modal-search" type="submit">Найти</button>
+          <button class="button-modal-search" type="submit">Найти</button>
         </form>
-
       </div>
     </div>
   </body>
