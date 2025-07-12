@@ -341,89 +341,160 @@
     </div>
     <div class="modal modal-opened">
       <div class="modal-block">
-        <div class="modal-header-container">
-          <h2 class="modal-block-title">Поиск гостиницы в Седоне</h2>
-          <button class="button-close" type="button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
-        </div>
+        <h2 class="modal-block-title">Поиск гостиницы в Седоне</h2>
+        <button class="button-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
         <form
           class="search-form"
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <label class="modal-block-label arrival-label" for="arrival-input">
-            Дата заезда:</label
-          >
-          <input
-            id="arrival-input"
-            class="arrival-input"
-            type="text"
-            placeholder="27 апреля 2020"
-            name="arrival-input"
-            required
-          />
-          <p class="error-message">Мы не можем отправить вас в прошлое.</p>
-
-          <label
-            class="modal-block-label departure-label"
-            for="departure-input"
-          >
-            Дата выезда:</label
-          >
-          <input
-            id="departure-input"
-            class="departure-input"
-            type="text"
-            placeholder="1 сентября 2023"
-            name="departure-input"
-            required
-          />
-          <p class="info-message">
-            На эти даты есть свободные номера. Пока есть.
-          </p>
-          <div class="people-count-container">
-            <label class="modal-block-label adults-label" for="adults">
-              Взрослые:</label
+          <div class="label-input-container">
+            <label class="modal-block-label arrival-label" for="arrival-input">
+              Дата заезда:</label
             >
-            <div class="number-input-container">
-              <button class="decrement">−</button>
+            <div class="form-input-container">
               <input
-                class="number-input"
-                id="adults"
-                type="number"
-                value="2"
-                min="0"
-                max="100"
-                readonly
+                id="arrival-input"
+                class="modal-form-input"
+                type="text"
+                placeholder="27 апреля 2020"
+                name="arrival-input"
+                required
               />
-              <button class="increment">+</button>
+              <p class="error-message info-message">
+                Мы не можем отправить вас в прошлое.
+              </p>
             </div>
-
-            <label class="modal-block-label kids-label" for="kids"
-              >Дети:
-              <div class="tooltip-container">
-                <button class="button-information" type="button"></button>
-                <div class="tooltip">
-                  <div class="tooltip-text">
-                    Укажите количество детей, которые будут с вами, возраст
-                    которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+          </div>
+          <div class="label-input-container">
+            <label
+              class="modal-block-label departure-label"
+              for="departure-input"
+            >
+              Дата выезда:</label
+            >
+            <div class="form-input-container">
+              <input
+                id="departure-input"
+                class="modal-form-input"
+                type="text"
+                placeholder="1 сентября 2023"
+                name="departure-input"
+                required
+              />
+              <p class="info-message">
+                На эти даты есть свободные номера. Пока есть.
+              </p>
+            </div>
+          </div>
+          <div class="people-count-container">
+            <div class="label-counter-container">
+              <label class="modal-block-label adults-label" for="adults">
+                Взрослые:</label
+              >
+              <div class="number-input-container">
+                <button class="decrement" type="button">
+                  <span class="visually-hidden">Уменьшить на 1</span>
+                  <svg
+                    width="14"
+                    height="2"
+                    viewBox="0 0 14 2"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0L0 2L14 2V0L0 0Z"
+                      fill="currentColor"
+                      fill-opacity="0.3"
+                    />
+                  </svg>
+                </button>
+                <input
+                  class="number-input"
+                  id="adults"
+                  type="number"
+                  value="2"
+                  min="0"
+                  max="100"
+                  readonly
+                />
+                <button class="increment" type="button">
+                  <span class="visually-hidden">Увеличить на 1</span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"
+                      fill="currentColor"
+                      fill-opacity="0.3"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="label-counter-container">
+              <label class="modal-block-label kids-label" for="kids"
+                >Дети:
+                <div class="tooltip-container">
+                  <button class="button-information" type="button"></button>
+                  <div class="tooltip">
+                    <div class="tooltip-text">
+                      Укажите количество детей, которые будут с вами, возраст
+                      которых от 6 до 18 лет. Дети до 6 лет размещаются
+                      бесплатно.
+                    </div>
                   </div>
                 </div>
+              </label>
+              <div class="number-input-container">
+                <button class="decrement" type="button">
+                  <span class="visually-hidden">Уменьшить на 1</span>
+                  <svg
+                    width="14"
+                    height="2"
+                    viewBox="0 0 14 2"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0L0 2L14 2V0L0 0Z"
+                      fill="currentColor"
+                      fill-opacity="0.3"
+                    />
+                  </svg>
+                </button>
+                <input
+                  class="number-input"
+                  id="kids"
+                  type="number"
+                  value="2"
+                  min="0"
+                  max="100"
+                  readonly
+                />
+                <button class="increment" type="button">
+                  <span class="visually-hidden">Увеличить на 1</span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"
+                      fill="currentColor"
+                      fill-opacity="0.3"
+                    />
+                  </svg>
+                </button>
               </div>
-            </label>
-            <div class="number-input-container">
-              <button class="decrement">−</button>
-              <input
-                class="number-input"
-                id="kids"
-                type="number"
-                value="2"
-                min="0"
-                max="100"
-                readonly
-              />
-              <button class="increment">+</button>
             </div>
           </div>
           <button class="button-modal-search" type="submit">Найти</button>

@@ -109,7 +109,7 @@ body {
   min-width: 10px;
   height: 10px;
   border-radius: 10px;
-  color: #fff;
+  color: #ffffff;
   background-color: #7db54f;
 }
 
@@ -227,7 +227,7 @@ body {
 }
 
 .advantages-item-special {
-  background-color: rgb(130, 179, 211);
+  background-color: #82b3d3;
 }
 
 .advantages-container {
@@ -414,7 +414,7 @@ body {
 
 .index-page .subscribe {
   background-image: url("../images/subscribe-bg.jpg");
-  background-color: grey;
+  background-color: #808080;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -546,7 +546,7 @@ body {
 /* Страница Каталог */
 .inner-header {
   color: #ffffff;
-  background-color: grey;
+  background-color: #808080;
   padding-left: 70px;
   background-image: url("../images/catalog-inner-background.jpg");
   background-size: cover;
@@ -716,7 +716,7 @@ body {
   top: 5px;
   width: 10px;
   height: 10px;
-  background: rgb(63, 94, 114);
+  background: #3f5e72;
   border-radius: 50%;
   display: none;
 }
@@ -770,7 +770,7 @@ body {
   line-height: 24px;
   text-transform: lowercase;
   position: absolute;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   top: 12px;
   left: 107px;
   opacity: 30%;
@@ -842,7 +842,7 @@ body {
   position: absolute;
   height: 3px;
   width: 269px;
-  background-color: rgb(96, 105, 108);
+  background-color: #60696c;
   border-radius: 3px;
   top: 3px;
   left: -20px;
@@ -865,7 +865,7 @@ body {
   left: -37px;
   width: 20px;
   height: 20px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 5px;
   cursor: pointer;
   z-index: 2;
@@ -894,7 +894,7 @@ body {
 }
 
 .button-submit {
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
   border-radius: 4px;
   cursor: pointer;
   border: none;
@@ -924,13 +924,13 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border: 2px solid rgba(229, 229, 229, 1);
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
 .results-view-item.current {
-  border: 2px solid rgba(0, 0, 0, 1);
+  border: 2px solid #000000;
 }
 
 .product-card-list {
@@ -946,7 +946,7 @@ body {
 .product-card {
   /* border: 1px solid red; */
   padding: 20px;
-  background-color: grey;
+  background-color: #808080;
   border-radius: 4px;
 }
 
@@ -961,7 +961,7 @@ body {
 .product-card-title {
   margin: 0;
   padding: 0;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   text-decoration: none;
   font-weight: 700;
   font-size: 24px;
@@ -989,16 +989,16 @@ body {
 
 .product-card-button {
   text-decoration: none;
-  background-color: rgba(117, 97, 87, 1);
+  background-color: #756157;
   border-radius: 4px;
 }
 
 .product-card-button.added {
-  background-color: rgba(125, 181, 79, 1);
+  background-color: #7db54f;
 }
 
 .favourites-button {
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
   box-shadow: none;
   border: none;
   /* padding: 8px 20px; */
@@ -1059,23 +1059,24 @@ body {
 }
 
 .modal-block {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
   width: 717px;
   height: 576px;
   border-radius: 30px;
+  position: relative;
 }
 
 .modal-opened {
   display: flex;
 }
 
-.modal-header-container {
+/* .modal-header-container {
   display: flex;
   width: 595px;
   justify-content: space-between;
   padding-top: 64px;
   padding-left: 70px;
-}
+} */
 
 .modal-block-title {
   margin: 0;
@@ -1084,14 +1085,20 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-bottom: 64px;
+  margin-bottom: 65px;
+  padding-top: 64px;
+  padding-left: 70px;
+  width: 540px;
 }
 
 .button-close {
+  position: absolute;
+  top: 64px;
+  left: 613px;
   width: 52px;
   height: 52px;
   background: url("../images/close-button-icon.svg") no-repeat center center;
-  background-color: rgba(242, 242, 242, 1);
+  background-color: #f2f2f2;
   border-radius: 50%;
   border: none;
 }
@@ -1101,50 +1108,44 @@ body {
   margin: 0 auto;
 }
 
+.label-input-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.label-counter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  margin-bottom: 30px;
+}
+
 .modal-block-label {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-  width: 137px;
-  margin-bottom: 33px;
+  max-width: 119px;
+  padding-top: 11px;
 }
 
-.arrival-input {
-  width: 400px;
+.modal-form-input {
+  box-sizing: border-box;
+  width: 440px;
   height: 48px;
   color: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  background-color: rgba(242, 242, 242, 1);
-  background: url("../images/modal-calendar-icon.svg") no-repeat 400px 16px;
-  border: none;
-  padding-left: 20px;
-}
-
-.departure-input {
-  width: 400px;
-  height: 48px;
-  color: inherit;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  background-color: rgba(242, 242, 242, 1);
-  background: url("../images/modal-calendar-icon.svg") no-repeat 400px 16px;
+  background: #f2f2f2 url("../images/modal-calendar-icon.svg") no-repeat 400px
+    16px;
   border: none;
   padding-left: 20px;
 }
 
 .error-message {
-  color: rgba(255, 87, 87, 1);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  margin: 0;
-  padding-left: 20px;
-  margin-left: 137px;
-  margin-bottom: 26px;
+  color: #ff5757;
 }
 
 .info-message {
@@ -1153,13 +1154,14 @@ body {
   font-size: 16px;
   line-height: 21px;
   padding-left: 20px;
-  margin-left: 137px;
-  margin-bottom: 34px;
+  min-height: 47px;
 }
 
 .people-count-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 
 /* .subscribe-email-input {
@@ -1175,23 +1177,24 @@ body {
   width: 26px;
   height: 26px;
   background: url("../images/i-modal-window-icon.svg") no-repeat center center;
-  background-color: rgba(131, 179, 211, 1);
+  background-color: #83b3d3;
   border-radius: 50%;
   border: none;
   position: relative;
   top: -22px;
   left: 56px;
+  margin-right: 54px;
 }
 
 .number-input-container {
   display: flex;
-  margin-top: -9px;
+  flex-wrap: wrap;
 }
 
 .decrement {
   width: 40px;
   height: 48px;
-  background-color: rgba(242, 242, 242, 1);
+  background-color: #f2f2f2;
   border: none;
   margin: 0;
   padding: 0;
@@ -1213,7 +1216,7 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
-  background-color: rgba(242, 242, 242, 1);
+  background-color: #f2f2f2;
   box-sizing: border-box;
   border: none;
 }
@@ -1221,7 +1224,7 @@ body {
 .increment {
   width: 40px;
   height: 48px;
-  background-color: rgba(242, 242, 242, 1);
+  background-color: #f2f2f2;
   border: none;
   margin: 0;
   padding: 0;
@@ -1232,8 +1235,8 @@ body {
   height: 60px;
   border-radius: 10px;
   border: none;
-  background-color: rgba(131, 179, 211, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: #83b3d3;
+  color: #ffffff;
   /* font-family: PT Sans; */
   font-weight: 700;
   font-size: 20px;
@@ -1245,26 +1248,26 @@ body {
 .tooltip-text {
   text-transform: none;
   position: absolute;
-  top: 18px;
-  left: 31px;
-  color: rgba(255, 255, 255, 1);
+  top: 16px;
+  left: -59px;
+  color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  background-color: rgba(51, 51, 51, 1);
+  background-color: #333333;
   width: 256px;
   box-sizing: border-box;
   border-radius: 10px;
-  padding: 20px 18px 18px 22px;
+  padding: 20px 18px 22px 22px;
 }
 
 .tooltip::after {
   content: "";
   position: absolute;
-  bottom: 35%;
-  left: 116%;
+  bottom: 46%;
+  left: 86%;
   transform: translateX(-50%);
   border-left: 9.5px solid transparent;
   border-right: 9.5px solid transparent;
-  border-bottom: 9px solid #333; /* треугольник смотрит вверх ногами */
+  border-bottom: 9px solid #333333; /* треугольник смотрит вверх ногами */
 }
