@@ -34,6 +34,7 @@ body {
   line-height: 26px;
   color: #333333;
 }
+
 .page-header {
   position: relative;
   padding-left: 238px;
@@ -134,7 +135,7 @@ body {
 }
 
 .navigation-link-search:hover {
-  color: red;
+  color: rgb(255, 0, 0);
 }
 
 .navigation-link-search:active {
@@ -223,8 +224,6 @@ body {
 }
 
 .advantages-list {
-  /* display: flex;
-  flex-wrap: wrap; */
   margin: 0;
   padding: 0;
   list-style: none;
@@ -235,6 +234,7 @@ body {
 .advantages-item {
   background-color: rgba(130, 179, 211, 0.2);
 }
+
 .advantages-item:nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.122);
 }
@@ -469,6 +469,7 @@ body {
   margin: 0 auto;
   margin-bottom: 54px;
 }
+
 .appointment-form {
   display: flex;
   justify-content: flex-end;
@@ -490,6 +491,7 @@ body {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
+
 .subscribe-button {
   font-family: inherit;
   font-weight: 700;
@@ -603,7 +605,6 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-/* Страница Каталог */
 .inner-header {
   color: #ffffff;
   background-color: #808080;
@@ -685,7 +686,6 @@ body {
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px; */
   width: 1060px;
   justify-content: flex-start;
   box-sizing: border-box;
@@ -808,10 +808,6 @@ body {
   display: none;
 }
 
-/* .catalog-filter-checkbox {
-  margin-right: 111px;
-} */
-
 .cost-container {
   display: flex;
   gap: 2px;
@@ -828,7 +824,6 @@ body {
   border: none;
   outline: none;
   font: inherit;
-  /* color: inherit; */
   box-sizing: border-box;
   width: 143px;
   height: 48px;
@@ -879,7 +874,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding-top: 89px;
-  /* padding-left: 75px; */
   justify-content: space-between;
   margin-bottom: 40px;
   width: 1060px;
@@ -913,7 +907,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   appearance: none;
-  /* background: url("../images/tick-selector.svg") no-repeat 260px 17px; */
 }
 .select-arrow {
   position: absolute;
@@ -957,7 +950,6 @@ body {
 
 .price-slider-container {
   position: relative;
-  /* width: 287px; */
   height: 6px;
   background: transparent;
   margin: 40px;
@@ -1014,8 +1006,6 @@ body {
 }
 
 .button {
-  /* width: 190px; */
-  /* min-height: 36px; */
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1201,15 +1191,15 @@ body {
 }
 
 .product-card-button.added:hover {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .product-card-button.added:focus {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .product-card-button.added:active {
-  background-color: #7DB54F;
+  background-color: #7db54f;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1218,14 +1208,13 @@ body {
 }
 
 .favourites-button {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   box-shadow: none;
   border: none;
-  /* padding: 8px 20px; */
 }
 
 .favourites-button:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .favourites-button:focus {
@@ -1344,7 +1333,6 @@ body {
   line-height: 26px;
   text-align: center;
   vertical-align: middle;
-
   text-decoration: none;
   width: 60px;
   color: inherit;
@@ -1366,9 +1354,11 @@ body {
 .modal-block {
   background-color: #ffffff;
   width: 717px;
-  height: 576px;
+  min-height: 300px;
   border-radius: 30px;
   position: relative;
+  padding: 64px 70px;
+  box-sizing: border-box;
 }
 
 .modal-opened {
@@ -1383,8 +1373,6 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin-bottom: 65px;
-  padding-top: 64px;
-  padding-left: 70px;
   width: 540px;
 }
 
@@ -1410,7 +1398,6 @@ body {
 }
 
 .search-form {
-  width: 577px;
   margin: 0 auto;
 }
 
@@ -1452,6 +1439,7 @@ body {
   border: none;
   padding-left: 20px;
   background-color: #f2f2f2;
+  padding-right: 46px;
 }
 
 .input-calendar-logo {
@@ -1472,6 +1460,7 @@ body {
   line-height: 21px;
   padding-left: 20px;
   min-height: 47px;
+  max-width: 371px;
 }
 
 .people-count-container {
@@ -1479,11 +1468,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-/* .subscribe-email-input {
-
-  background: url("../images/modal-calendar-icon.svg") no-repeat 100px 10px;
-} */
 
 .tooltip-container {
   position: relative;
@@ -1537,7 +1521,6 @@ body {
 }
 
 .number-input {
-  /* font-family: inherit; */
   width: 31px;
   height: 48px;
   font-weight: 700;
@@ -1558,7 +1541,6 @@ body {
   border: none;
   background-color: #83b3d3;
   color: #ffffff;
-  /* font-family: PT Sans; */
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1597,10 +1579,10 @@ body {
 .tooltip::after {
   content: "";
   position: absolute;
-  bottom: 46%;
+  bottom: 44%;
   left: 86%;
   transform: translateX(-50%);
   border-left: 9.5px solid transparent;
   border-right: 9.5px solid transparent;
-  border-bottom: 9px solid #333333; /* треугольник смотрит вверх ногами */
+  border-bottom: 9px solid #333333;
 }
