@@ -1657,7 +1657,7 @@ body {
 .tooltip-text {
   text-transform: none;
   position: relative;
-
+  display: block;
   color: #ffffff;
   font-weight: 400;
   font-size: 16px;
