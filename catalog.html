@@ -13,7 +13,7 @@
     <div class="container">
       <header class="page-header">
         <a class="page-header-link" href="#">
-          <img class="logo" src="images/logo.svg" alt="Логотип сайта Седона" width="140" height="70" />
+          <img class="logo" src="images/logo.svg" alt="Логотип сайта Седона." width="140" height="70" />
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -31,7 +31,7 @@
             <li class="navigation-item-search">
               <a class="navigation-link-search" href="#">
                 <span class="visually-hidden">Поиск</span>
-                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка поиск">
                   <path
                     d="M18.5 17.0083L14.8 13.3287C15.8 12.0359 16.5 10.3453 16.5 8.4558C16.5 4.08011 12.9 0.5 8.5 0.5C4.1 0.5 0.5 4.17956 0.5 8.55525C0.5 12.9309 4.1 16.511 8.5 16.511C10.3 16.511 12 15.9144 13.4 14.8204L17.1 18.5L18.5 17.0083ZM8.5 14.5221C5.2 14.5221 2.5 11.837 2.5 8.55525C2.5 5.27348 5.2 2.5884 8.5 2.5884C11.8 2.5884 14.5 5.27348 14.5 8.55525C14.5 11.837 11.8 14.5221 8.5 14.5221Z"
                     fill="currentColor" />
@@ -41,7 +41,7 @@
             <li class="navigation-item-favourites">
               <a class="navigation-link-favourites" href="#">
                 <span class="visually-hidden">Избранное</span>
-                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка избранное">
                   <path
                     d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"
                     fill="currentColor" />
@@ -62,7 +62,7 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
-                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка главной страницы">
                   <path
                     d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
                     fill="currentColor" />
@@ -136,22 +136,22 @@
                 <div class="cost-container">
                   <div class="min-cost-container">
                     <input class="input-cost input-cost-min-value" type="text" name="cost-min-value" value="0"
-                      id="cost-min-value" />
+                      id="cost-min-value" required />
                     <label class="cost-label" for="cost-min-value"> От </label>
                   </div>
                   <div class="max-cost-container">
                     <input class="input-cost input-cost-max-value" type="text" name="cost-max-value" value="9000"
-                      id="cost-max-value" />
+                      id="cost-max-value" required />
                     <label class="cost-label" for="cost-max-value"> До </label>
                   </div>
                 </div>
                 <div class="price-slider-container">
                   <div class="slider-track"></div>
                   <div class="slider-range"></div>
-                  <button class="slider-thumb min">
+                  <button class="slider-thumb min" type="button">
                     <span class="visually-hidden">Установить минимальный порог цены</span>
                   </button>
-                  <button class="slider-thumb max">
+                  <button class="slider-thumb max" type="button">
                     <span class="visually-hidden">Установить максимальный порог цены</span>
                   </button>
                 </div>
@@ -189,21 +189,18 @@
 
             <ul class="results-view-list">
               <li class="results-view-item">
-                <a class="results-view-link current" href="#">
+                <a class="results-view-link current sort-1" href="#">
                   <span class="visually-hidden">Плиткой</span>
-                  <img src="./images/sorting-icon-1.svg" alt="" width="16" height="14" />
                 </a>
               </li>
               <li class="results-view-item">
-                <a class="results-view-link" href="#">
+                <a class="results-view-link sort-2" href="#">
                   <span class="visually-hidden">Галерея</span>
-                  <img src="./images/sorting-icon-2.svg" alt="" width="16" height="14" />
                 </a>
               </li>
               <li class="results-view-item">
-                <a class="results-view-link" href="#">
+                <a class="results-view-link sort-3" href="#">
                   <span class="visually-hidden">Списком</span>
-                  <img src="./images/sorting-icon-3.svg" alt="" width="16" height="14" />
                 </a>
               </li>
             </ul>
@@ -238,7 +235,7 @@
             <li class="product-card">
               <a class="product-card-link" href="product.html">
                 <img class="product-card-image" src="./images/hotel-villas-poco-diablo.jpg"
-                  alt="Villas at Poco Diablo" width="300" height="212"/>
+                  alt="Villas at Poco Diablo." width="300" height="212"/>
               </a>
               <a class="product-card-title-link" href="#">
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
@@ -262,7 +259,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="./images/hotel-desert-quail.jpg" alt="Desert Quail Inn" width="300" height="212" />
+                <img class="product-card-image" src="./images/hotel-desert-quail.jpg" alt="Desert Quail Inn." width="300" height="212" />
               </a>
               <a class="product-card-title-link" href="#">
                 <h3 class="product-card-title">Desert Quail Inn</h3>
@@ -286,7 +283,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="./images/hotel-green-tree-inn.jpg" alt="GreenTree Inn" width="300" height="212" />
+                <img class="product-card-image" src="./images/hotel-green-tree-inn.jpg" alt="GreenTree Inn." width="300" height="212" />
               </a>
               <a class="product-card-title-link" href="#">
                 <h3 class="product-card-title">GreenTree Inn</h3>
@@ -343,7 +340,8 @@
             честное бойскаутское!
           </p>
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe-email-input" type="email" placeholder="Ваш e-mail" name="user-mail" required />
+            <label class="visually-hidden" for="email">Ваш e-mail</label>
+            <input id="email" class="subscribe-email-input" type="email" placeholder="Ваш e-mail" name="user-mail" required />
             <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -388,7 +386,7 @@
             </a>
           </div>
           <a class="html-academy-logo" href="#">
-            <svg width="115" height="34" viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg width="115" height="34" viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Логотип HTML Academy">
               <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="currentColor" />
               <path
                 d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z"

@@ -13,7 +13,7 @@
     <div class="container">
       <header class="page-header">
         <a class="page-header-link" href="#">
-          <img class="logo" src="images/logo.svg" alt="Логотип сайта Седона" width="140" height="70" />
+          <img class="logo" src="images/logo.svg" alt="Логотип сайта Седона." width="140" height="70" />
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -60,7 +60,7 @@
       <main class="main-index main">
         <section class="welcome">
           <h1 class="visually-hidden">Седона - туристический город.</h1>
-          <img class="welcome-image" src="images/welcome.svg" alt="Welcome to Sedona text" width="458" height="352" />
+          <img class="welcome-image" src="images/welcome.svg" alt="Welcome to Sedona text." width="458" height="352" />
         </section>
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
@@ -79,7 +79,7 @@
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
               </div>
-              <img class="advantages-image" src="images/advantages-1.jpg" alt="Sedona сity view" width="800"
+              <img class="advantages-image" src="images/advantages-1.jpg" alt="Sedona сity view." width="800"
                 height="385" />
             </li>
             <li class="advantages-item">
@@ -107,7 +107,7 @@
               </div>
             </li>
             <li class="advantages-item advantages-item-special">
-              <img class="advantages-item-image" src="images/advantages-2.jpg" alt="Sedona diablo bridge" width="800"
+              <img class="advantages-item-image" src="images/advantages-2.jpg" alt="Sedona diablo bridge." width="800"
                 height="385" />
               <div class="advantages-container">
                 <h3 class="advantages-title">Там есть<br />мост дьявола</h3>
@@ -167,7 +167,8 @@
             честное бойскаутское!
           </p>
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe-email-input" type="email" placeholder="Ваш e-mail" name="user-mail" required />
+            <label class="visually-hidden" for="email">Ваш e-mail</label>
+            <input id="email" class="subscribe-email-input" type="email" placeholder="Ваш e-mail" name="user-mail" required />
             <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -212,7 +213,7 @@
             </a>
           </div>
           <a class="html-academy-logo" href="#">
-            <svg width="115" height="34" viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg width="115" height="34" viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Логотип HTML Academy">
               <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="currentColor" />
               <path
                 d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z"
@@ -294,7 +295,7 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor" fill-opacity="0.3" />
                   </svg>
                 </button>
-                <input class="number-input" id="adults" name="adults" type="number" value="2" min="0" max="100" readonly />
+                <input class="number-input" id="adults" name="adults" type="number" value="2" min="0" max="100" readonly required />
                 <button class="btn-number-input" type="button">
                   <span class="visually-hidden">Увеличить на 1</span>
                   <svg class="button-icon" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
@@ -328,7 +329,7 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor" fill-opacity="0.3" />
                   </svg>
                 </button>
-                <input class="number-input" id="kids" name="kids" type="number" value="2" min="0" max="100" readonly />
+                <input class="number-input" id="kids" name="kids" type="number" value="2" min="0" max="100" readonly required />
                 <button class="btn-number-input" type="button">
                   <span class="visually-hidden">Увеличить на 1</span>
                   <svg class="button-icon" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"

@@ -183,7 +183,7 @@ body {
 }
 
 .navigation-link-search:active {
-  color: #82b3d3;
+  color: rgba(130, 179, 211, 0.4);
 }
 
 .navigation-link-favourites {
@@ -207,7 +207,7 @@ body {
 }
 
 .navigation-link-favourites:active {
-  color: #82b3d3;
+  color: rgba(130, 179, 211, 0.4);
 }
 
 .navigation-link-button {
@@ -776,14 +776,17 @@ body {
   padding: 32px 0 0;
   border: 0;
   margin-right: 69px;
+  /* todo показать Виктории  */
+  width: 196px;
+
 }
 
 .catalog-group-checkbox {
-  margin-right: 75px;
+  margin-right: 25px;
 }
 
 .catalog-group-radiobutton {
-  margin-right: 150px;
+  margin-right: 94px;
 }
 
 .catalog-filter-group.cost {
@@ -830,6 +833,7 @@ body {
   line-height: 23px;
   position: relative;
   padding-left: 36px;
+  display: inline-block;
 }
 
 .checkbox-label::before {
@@ -867,6 +871,7 @@ body {
   line-height: 23px;
   position: relative;
   padding-left: 36px;
+  display: inline-block;
 }
 
 .radio-button-label::before {
@@ -1177,6 +1182,20 @@ body {
   border-radius: 4px;
   box-sizing: border-box;
   text-decoration: none;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sort-1 {
+  background-image: url("../images/sorting-icon-1.svg");
+}
+
+.sort-2 {
+  background-image: url("../images/sorting-icon-2.svg");
+}
+
+.sort-3 {
+  background-image: url("../images/sorting-icon-3.svg");
 }
 
 .results-view-link.current {
@@ -1740,6 +1759,10 @@ body {
 .number-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.number-input {
+  -moz-appearance: textfield;
 }
 
 .number-input {
